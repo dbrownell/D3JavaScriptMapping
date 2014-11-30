@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+</head>
+<body>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="Scripts/datamaps.usa.min.js"></script>
+    
+    <section class="examples">
+    <article>
+          <!--<h3>State Labels:</h3>-->
+         <!-- <div class="well well-small options"><span>Options:</span> USA projection, state labels plugin (USA map only), custom country fill color data</div>-->
+          <div class="map" id="map_election" style="position: relative; width: 1000px; height: 600px;"></div>
+          <script data-info="Map source for US Election map and labels plugin">
+   
+        var election = new Datamap({
+            scope: 'usa',
+            element: document.getElementById('map_election'),
+            geographyConfig: {
+                highlightBorderColor: '#bada55',
+                popupTemplate: function (geography, data) {
+                    return '<div class="hoverinfo"><strong>' + geography.properties.name + '</strong> <br />Body System:' + data.bodySystem + ' </div>'
+                },
+                highlightBorderWidth: 3
+            },
+
+            fills: {
+                'TitleII': '#CC4731',
+                'TitleXVI': '#306596',
+                'Heavy TitleXVI': '#667FAF',
+                'Light TitleXVI': '#A9C0DE',
+                'Heavy TitleII': '#CA5E5B',
+                'Light TitleII': '#EAA9A8',
+                defaultFill: '#EDDC4E'
+            },
+            data: {
+                "AZ": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 5
+                },
+                "CO": {
+                    "fillKey": "Light TitleXVI",
+                    "bodySystem": 5
+                },
+                "DE": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "FL": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 29
+                },
+                "GA": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "HI": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "ID": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "IL": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "IN": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 11
+                },
+                "IA": {
+                    "fillKey": "Light TitleXVI",
+                    "bodySystem": 11
+                },
+                "KS": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "KY": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "LA": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "MD": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "ME": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "MA": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "MN": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "MI": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "MS": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "MO": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 13
+                },
+                "MT": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "NC": {
+                    "fillKey": "Light TitleII",
+                    "bodySystem": 32
+                },
+                "NE": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "NV": {
+                    "fillKey": "Heavy TitleXVI",
+                    "bodySystem": 32
+                },
+                "NH": {
+                    "fillKey": "Light TitleXVI",
+                    "bodySystem": 32
+                },
+                "NJ": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "NY": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "ND": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "NM": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "OH": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "OK": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "OR": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "PA": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "RI": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "SC": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "SD": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "TN": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "TX": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "UT": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "WI": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "VA": {
+                    "fillKey": "Light TitleXVI",
+                    "bodySystem": 32
+                },
+                "VT": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "WA": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "WV": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "WY": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "CA": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "CT": {
+                    "fillKey": "TitleXVI",
+                    "bodySystem": 32
+                },
+                "AK": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "AR": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                },
+                "AL": {
+                    "fillKey": "TitleII",
+                    "bodySystem": 32
+                }
+            }
+        });
+        election.labels();
+          </script>
+        </article>
+      </section>
+</body>
+</html>

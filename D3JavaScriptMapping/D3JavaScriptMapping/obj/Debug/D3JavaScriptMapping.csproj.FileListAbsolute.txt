@@ -1,0 +1,9 @@
+K:\SSA_Research\D3JavaScriptMapping\D3JavaScriptMapping\bin\D3JavaScriptMapping.dll
+K:\SSA_Research\D3JavaScriptMapping\D3JavaScriptMapping\bin\D3JavaScriptMapping.pdb
+K:\SSA_Research\D3JavaScriptMapping\D3JavaScriptMapping\obj\Debug\D3JavaScriptMapping.dll
+K:\SSA_Research\D3JavaScriptMapping\D3JavaScriptMapping\obj\Debug\D3JavaScriptMapping.pdb
+C:\SSA\D3_Pratice\D3JavaScriptMapping\D3JavaScriptMapping\D3JavaScriptMapping\bin\D3JavaScriptMapping.dll
+C:\SSA\D3_Pratice\D3JavaScriptMapping\D3JavaScriptMapping\D3JavaScriptMapping\bin\D3JavaScriptMapping.pdb
+C:\SSA\D3_Pratice\D3JavaScriptMapping\D3JavaScriptMapping\D3JavaScriptMapping\obj\Debug\D3JavaScriptMapping.csprojResolveAssemblyReference.cache
+C:\SSA\D3_Pratice\D3JavaScriptMapping\D3JavaScriptMapping\D3JavaScriptMapping\obj\Debug\D3JavaScriptMapping.dll
+C:\SSA\D3_Pratice\D3JavaScriptMapping\D3JavaScriptMapping\D3JavaScriptMapping\obj\Debug\D3JavaScriptMapping.pdb
